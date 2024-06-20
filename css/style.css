@@ -5594,7 +5594,13 @@ p{
 }
 p{
  display: inline;
- text-align: justify;
+ text-align:justify;
+
+ #section-about p {
+	text-align: justify;
+}
+
+
 }
 input[type="checkbox"] {
 	height: 2em;
