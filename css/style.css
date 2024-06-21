@@ -7831,3 +7831,83 @@ h2 {
 	text-align: center;
 }
 
+
+
+#testimonials-section {
+    padding: 50px 0;
+}
+
+.watermark {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+   
+    color: #000; /* Text color */
+    padding: 10px 20px; /* Padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.fade-in-down {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.carousel {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.testimonial {
+    border-left: 4px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    background: #f9f9f9;
+}
+
+.testimonial .title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #2c3e50; /* Highlight color */
+}
+
+.testimonial p,
+.testimonial br {
+    margin: 0; /* Remove default margin */
+    padding: 0;
+}
+
+.testimonial span,
+.testimonial b,
+.testimonial i {
+    display: block;
+    margin-bottom: 5px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
