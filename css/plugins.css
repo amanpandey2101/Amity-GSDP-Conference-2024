@@ -4757,9 +4757,7 @@ img.mfp-img {
   font-size:12px;
 }
 
-.countdown-s2{
-  display:inline-block;
-}
+
 
 .countdown-s2 .countdown-show4 .countdown-section {
   width: 80px;
@@ -4776,7 +4774,7 @@ img.mfp-img {
 .countdown-s2 .countdown-amount {
   width:auto;
   margin:0;
-  font-size:26px;
+  font-size:25px;
   font-weight:bold;
 }
 
@@ -4788,16 +4786,21 @@ img.mfp-img {
 }
 
 @media only screen and (max-width: 670px) {
-  .countdown-s2{
-    position: relative;
-    width: 120%;
-    display: flex;
-    justify-content: center; 
-    /* right: 3vw; */
-   
   
+  .countdown-s2 .countdown-show4 .countdown-section {
+    width: 17.5vw;
+   
+    background:rgba(255,255,255,.1);
+    padding:20px 0 10px 0;
+    margin:1.5vw;
   }
+  
 
+}
+.countdown-timer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .text-dark .countdown-amount,

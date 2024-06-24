@@ -1,20 +1,22 @@
-Google Fonts - Poppins
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 
 .slide-container{
-  max-width: 1120px;
+  /* max-width: 1120px; */
   width: 100%;
   padding: 40px 0;
 }
 .slide-content{
-  margin: 0 40px;
+ 
+ width: 80%;
+ margin: auto;
   overflow: hidden;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 .card{
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: #eaefef;
+  height: 45vh;
 }
 .image-content,
 .card-content{
@@ -25,6 +27,9 @@ Google Fonts - Poppins
   padding: 10px 14px;
  /* background-color: #f9f9f9; */      
 }
+/* .card-wrapper .card{
+  width: 20%;
+} */
 .image-content{
   position: relative;
   row-gap: 5px;
@@ -123,10 +128,7 @@ Google Fonts - Poppins
 }
 
 @media screen and (max-width: 768px) {
-  .slide-content{
-    margin: 0 10px;
-  }
-  .swiper-navBtn{
-    display: none;
-  }
+ .card{
+  height: 38vh;
+ }
 } 

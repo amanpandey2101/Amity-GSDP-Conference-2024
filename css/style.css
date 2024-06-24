@@ -197,8 +197,10 @@ overflow:visible;
 	}
 	
 	header div#logo {
-	display: table;
+	display: inline;
+	margin-top: 2vh;
 	height: 80px;
+	width: 15vw;
 	float: left;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -222,14 +224,14 @@ overflow:visible;
 
 
 	header div#logo img {
-		max-width: 40%;
+		max-width: 70%;
 		height: auto;
 	}
 	
 	@media (max-width: 768px) {
 		header div#logo {
-			height: 60px; /* Adjust height for smaller screens */
-			padding-left: 10px; /* Adjust padding for smaller screens */
+			width: 30vw;
+			padding-left: 10px; 
 		}
 	
 		header div#logo a {
@@ -237,7 +239,19 @@ overflow:visible;
 		}
 	
 		header div#logo .logo-2 {
-			display: block; /* Adjust if you have a different logo for small screens */
+			display: block; 
+	}
+}
+	@media (max-width: 400px) {
+		header div#logo {
+			width: 40vw;
+			padding-left: 10px; 
+		}
+	
+	}
+	@media (min-width: 990px) {
+		.transparent .nav-items{
+			padding: 0;
 		}
 	}
 
@@ -835,9 +849,10 @@ overflow:visible;
 		bottom: 2.5rem;
 		width:36px;
 		height:36px;
-		padding:6px;
+		position: absolute;
 		text-align:center;
 		cursor:pointer;
+		top: 2vw;
 		}	
 
 		.header-extra{
@@ -2330,26 +2345,26 @@ border:solid 1px #ddd;
 	padding: 0;
 	margin: 0px 0 30px 0;
 	}
-	h1.title{
+	h1 .title{
 	font-size:64px;
 	letter-spacing:10px;
 	}
-	h1.title.s2{
+	h1 .title .s2{
 	font-size:64px;
 	letter-spacing:0px;
 	}
-	h1.title strong{
+	h1 .title strong{
 	font-family:"Allura";
 	text-transform:none;
 	letter-spacing:0;
 	font-weight:normal;
 	}
-	h1.title-2{
+	h1 .title-2{
 	letter-spacing:20px;
 	text-transform:uppercase;
 	line-height:50px;
 	}
-	h1.title-3{
+	h1 .title-3{
 	font-size:72px;
 	}
 	h1.title-3 strong{
@@ -4115,7 +4130,7 @@ overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
     .de-video-content {
-        top: 65%;
+        top: 50%;
 		/* transform: translate(-50%, -50%); */
     }
 
@@ -4186,10 +4201,13 @@ top:0;
     text-decoration: none;
 	color: black;
 	padding:0.7rem;
+	font-size: 1.4em;
+	border-radius: 5%;
 
 }
 .register-btn:hover{
-	background-color: rgb(209, 196, 2);
+	background-color: rgb(255, 239, 9);
+   letter-spacing: 1px;
 
 }
 
@@ -4318,8 +4336,13 @@ background:#555;
           transition: all .2s ease-in-out;
 }
 .img-circle {
-  border-radius: 50%;
+  border-radius: 100%;
+ 
 }
+.img-circle:hover{
+	border: 4px solid #f44073;
+}
+
 .img-responsive {
   display: inline-block;
 }
@@ -6283,20 +6306,57 @@ transition:.5s;
 .schedule-item>div {
 	float: left;
 }
-.schedule-item .sc-time {
+/* .new-tab-single-content .sc-time {
+	display: flex;
+	justify-content: center;
+
 	font-weight:bold;
 	width: 160px;
-	
 	font-size:14px;
-}
+	margin-top: 1vh;
+} */
 .schedule-item .sc-pic {
-	width: 120px;
 	margin-top: 1vh;
 }
 .schedule-item .sc-pic img {
-	width: 90px;
-	padding:5px;
-	height: auto;
+	height: 85px;
+	object-fit: cover;
+}
+.row .committee-card{
+	box-shadow: 3px 3px 12px 3px gray;
+	border-radius: 2%;
+	margin-top: 2vh;
+	width:200px;
+
+	
+}
+.row .committee-card:hover{
+	box-shadow: 1px 5px 10px 10px #c71e837f;
+	scale: 1.06;
+	transition: all 200ms ease-in-out;
+	
+	
+}
+.new-tab-single-content .row{
+	column-gap: 2vw;
+	display: flex;
+	justify-content: center;
+}
+@media only screen and (max-width:678px) {
+	.new-tab-single-content .row{
+		display: flex;
+		row-gap: 3vw;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.row .committee-card{
+	margin-top: 3vh;
+		
+		
+	}
+
+
+   
 }
 .schedule-item .sc-name {
 	font-weight: normal;
@@ -7461,11 +7521,11 @@ display:table;
 	font-size:5vh;
 	}
 	
-	.schedule-item .sc-time {
+	/* .schedule-item .sc-time {
 		width: 100%;
 		padding-bottom: 20px;
 		float: none;
-	}
+	} */
 	.schedule-item .sc-pic {
 		width: 80px;
 	}
@@ -7619,7 +7679,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .sc-time {
@@ -7631,6 +7691,8 @@ body {
     font-size: 1.2em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
 }
 
 .sc-pic img {
