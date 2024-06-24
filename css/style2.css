@@ -25,6 +25,11 @@ Google Fonts - Poppins
   padding: 10px 14px;
  /* background-color: #f9f9f9; */      
 }
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
 .card-content .description .name{
   color: black !important;
 
