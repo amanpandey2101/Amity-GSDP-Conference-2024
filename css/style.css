@@ -7899,6 +7899,8 @@ h2 {
 }
 
 #section-sponsors .card {
+	width: 80%;
+	height: 80%;
     border: 2px solid black; /* Set border color to black */
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; /* Added background-color transition */
     overflow: hidden;
@@ -7921,9 +7923,11 @@ h2 {
     transition: filter 0.2s;
 }
 
-#section-sponsors .card-img.grey-hover:hover {
+/* #section-sponsors .card-img.grey-hover:hover {
     filter: grayscale(100%);
-}
+} */
+
+
 
 
 /* Testimonials Section */
@@ -7986,3 +7990,8 @@ h2 {
         padding: 20px;
     }
 }
+
+.copyright-center {
+    text-align: center;
+}
+
