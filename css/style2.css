@@ -139,3 +139,23 @@
   width: 105%;
  }
 } 
+@media screen and (max-width: 420px) {
+ .card{
+  height: 37vh;
+  
+ }
+ .slide-content{
+  width: 100%;
+ }
+
+} 
+@media screen and (max-width: 376px) {
+ .card{
+  height: 46vh;
+  
+ }
+ .slide-content{
+  width: 100%;
+ }
+
+} 
