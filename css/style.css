@@ -6341,23 +6341,25 @@ transition:.5s;
 	column-gap: 2vw;
 	display: flex;
 	justify-content: center;
+	
 }
 @media only screen and (max-width:678px) {
 	.new-tab-single-content .row{
 		display: flex;
 		row-gap: 3vw;
 		flex-direction: column;
-		justify-content: center;
+		align-items: center;
 	}
 	.row .committee-card{
-	margin-top: 3vh;
-		
-		
+	margin-top: 3vh;	
 	}
 
 
    
 }
+/* .new-tab-single-content{
+	margin: auto !important;
+} */
 .schedule-item .sc-name {
 	font-weight: normal;
 	font-size: 14px;
@@ -7592,7 +7594,9 @@ display:table;
 
 
 	}
-
+.important-links #registration-section{
+	text-align: center;
+}
 	.important-links {
 		display: flex;
 		flex-wrap: wrap;
@@ -7661,12 +7665,13 @@ body {
     padding: 20px;
 	width: screen;
     background-color: #f5f5f5;
+	margin: auto;
 }
 
 /* Styling the content */
 .new-tab-content {
     text-align: center;
-   
+	margin: auto;
     width: 100%;
     background: #fff;
     padding: 20px;

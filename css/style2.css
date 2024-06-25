@@ -129,6 +129,13 @@
 
 @media screen and (max-width: 768px) {
  .card{
-  height: 38vh;
+  height: 54vh;
+  
+ }
+ .slide-content{
+  width: 100%;
+ }
+ .slide-container{
+  width: 105%;
  }
 } 
