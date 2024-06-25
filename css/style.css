@@ -2126,14 +2126,23 @@ border:solid 1px #ddd;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: rgba(255,255,255,.5);
 	}
-	
+	.action-buttons{
+		display: flex;
+		justify-content: center;
+		column-gap: 3vw;
+		position: relative;
+
+
+	}
 	/* divider */
 	/* ------------------------------ */
 	.spacer-single{
+		
 	width:100%;
 	height:30px;
 	display:block;
 	clear:both;
+
 	}
 	
 	.spacer-double{
@@ -3170,7 +3179,7 @@ border:solid 1px #ddd;
 }
 .pricing-s1 .top h2 {
 	font-size: 24px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-weight: normal;
 }
 .pricing-s1 .top > * {
@@ -3178,13 +3187,13 @@ border:solid 1px #ddd;
 }
 .pricing-s1 .top .price .currency {
 	font-size: 24px;
-	line-height: 54px;
-	vertical-align: top;
+	line-height: 14px;
+	/* vertical-align: top; */
 	display: inline-block;
 }
 .pricing-s1 .top .price b {
 	font-size: 48px;
-	line-height: 70px;
+	line-height: 20px;
 	color: #fff;
 }
 .pricing-s1 .top .price .month {
@@ -3204,7 +3213,7 @@ border:solid 1px #ddd;
 	text-align:left;
 }
 .pricing-s1 .bottom ul li {
-	line-height: 60px;
+	line-height: 40px;
 	padding: 0px 30px;
 }
 .pricing-s1 .bottom ul li > span {
@@ -3240,7 +3249,12 @@ border:solid 1px #ddd;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
 }
-
+/* .registration-card .pricing-s1{
+	height: 62vh;
+} */
+.registration-card .note{
+	padding: 0 1vw;
+}
 /* light version */
 
 .pricing-s1.light .top {
@@ -5955,6 +5969,15 @@ right:-15px;
 
 .wow{visibility: hidden;}
 
+.welcome-text div{
+	text-align: justify;
+	font-size: larger;
+	color: gray;
+}
+.welcome-text h2{
+	text-align: justify;
+}
+
 
 #back-to-top {
     position: fixed;
@@ -7995,3 +8018,49 @@ h2 {
     text-align: center;
 }
 
+.testimonial a {
+	color: #1a73e8; /* Highlight color for the link */
+	text-decoration: none;
+	font-weight: bold;
+}
+.testimonial a:hover {
+	text-decoration: underline;
+}
+
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	gap: 10px; /* Space between buttons */
+	margin-top: 20px;
+}
+
+.register-btn, .download-btn {
+	flex: 1;
+	max-width: 220px; /* Set a max-width for the buttons */
+	padding: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000; /* Black text color for contrast */
+	background-color: #ffd700; /* Yellow color */
+	border: none;
+	border-radius: 5px;
+	text-align: center; /* Center text within the button */
+	text-decoration: none;
+	transition: background-color 0.3s, transform 0.3s;
+}
+
+.register-btn:hover, .download-btn:hover {
+	background-color: #ffc700; /* Darker yellow for hover */
+	transform: translateY(-3px);
+}
+
+.register-btn:active, .download-btn:active {
+	background-color: #ffbf00; /* Even darker yellow for active */
+	transform: translateY(1px);
+}
+
+.register-btn:focus, .download-btn:focus {
+	outline: none;
+	box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Yellow shadow for focus */
+}

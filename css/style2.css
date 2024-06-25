@@ -16,7 +16,7 @@
 .card{
   border-radius: 10px;
   background-color: #eaefef;
-  height: 45vh;
+  height: 50vh;
 }
 .image-content,
 .card-content{
@@ -139,9 +139,21 @@
   width: 105%;
  }
 } 
+@media screen and (max-width: 912px) {
+  .card{
+   height: 28vh;
+   
+  }
+  .slide-content{
+   width: 100%;
+  }
+  .slide-container{
+   width: 105%;
+  }
+ } 
 @media screen and (max-width: 420px) {
  .card{
-  height: 37vh;
+  height: 40vh;
   
  }
  .slide-content{
@@ -151,7 +163,7 @@
 } 
 @media screen and (max-width: 376px) {
  .card{
-  height: 46vh;
+  height: 55vh;
   
  }
  .slide-content{
