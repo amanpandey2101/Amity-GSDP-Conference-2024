@@ -7937,13 +7937,13 @@ h2 {
     border: 2px solid black; /* Set border color to black */
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; /* Added background-color transition */
     overflow: hidden;
-    background-color: #007bff; /* Set your desired default color here */
+    background-color:white; /* Set your desired default color here */
 }
 
 #section-sponsors .card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ff5733; /* Set your desired hover color here */
+    background-color: white; /* Set your desired hover color here */
 }
 
 #section-sponsors .card-body {
@@ -8077,33 +8077,31 @@ h2 {
 
 
 .contact-details-box {
+    width: 100%; /* Adjust width as needed */
+    max-width: 350px; /* Limit maximum width */
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
    
-    /* padding: 10px;
-    border: 1px solid #ddd;
-    margin-top: 20px; */
-	width: 350px; /* Set the width of the box */
-    max-width: 100%; /* Ensure it doesn't exceed container width */
-    padding: 15px; /* Padding inside the box */
-    margin-top: auto; /* Margin at the top */
-    /* background-color: #f0f0f0; Background color */
-    border: 1px solid #ccc; /* Border style */
-    box-sizing: border-box; /* Include padding and border in the box's total width */
-	align-items: center;
-	margin-left: 1000px;
-	margin-right: 0%;
+    margin-left: auto; 
+    margin-right: auto; /* Center horizontally */
+	text-align: right; 
 }
 
 .contact-details h4 {
     font-size: 18px;
     margin-bottom: 10px;
-	color: white;
+    color: #ffffff; /* White color */
+	text-align: right;
 }
 
 .contact-details p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 8px;
-	color: white;
+    color: #ffffff; /* White color */
+	text-align: right;
 }
 
 .contact-details p a {
@@ -8117,14 +8115,11 @@ h2 {
 
 .social-icons {
     text-align: right; /* Align icons to the right */
+	margin-top: 10px;
 }
-.social-icons h4 {
-    color: #white; /* Red color */
-}
-
 
 .social-icons a {
-    margin-left: 10px; /* Add some spacing between icons */
+    margin-left: 10px; /* Add spacing between icons */
     color: #333; /* Adjust icon color */
 }
 
