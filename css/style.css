@@ -5977,6 +5977,11 @@ right:-15px;
 .welcome-text h2{
 	text-align: justify;
 }
+.welcome-text .extra{
+	text-align: justify;
+}
+
+
 
 
 #back-to-top {
@@ -7729,7 +7734,12 @@ body {
     height: 80px;
     object-fit: cover;
     margin-bottom: 10px;
-}
+	
+} 
+
+
+
+
 
 .sc-name h4 {
     margin-bottom: 5px;
@@ -8063,4 +8073,61 @@ h2 {
 .register-btn:focus, .download-btn:focus {
 	outline: none;
 	box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Yellow shadow for focus */
+}
+
+
+.contact-details-box {
+   
+    /* padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 20px; */
+	width: 350px; /* Set the width of the box */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+    padding: 15px; /* Padding inside the box */
+    margin-top: auto; /* Margin at the top */
+    /* background-color: #f0f0f0; Background color */
+    border: 1px solid #ccc; /* Border style */
+    box-sizing: border-box; /* Include padding and border in the box's total width */
+	align-items: center;
+	margin-left: 1000px;
+	margin-right: 0%;
+}
+
+.contact-details h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+	color: white;
+}
+
+.contact-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+	color: white;
+}
+
+.contact-details p a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.contact-details p a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    text-align: right; /* Align icons to the right */
+}
+.social-icons h4 {
+    color: #white; /* Red color */
+}
+
+
+.social-icons a {
+    margin-left: 10px; /* Add some spacing between icons */
+    color: #333; /* Adjust icon color */
+}
+
+.social-icons a:hover {
+    color: #337ab7; /* Adjust color on hover */
 }
