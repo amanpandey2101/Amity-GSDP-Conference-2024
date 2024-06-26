@@ -5580,6 +5580,7 @@ color:rgba(0,0,0,1) !important;
 	cursor:pointer;
 }
 
+
 .nav-exit:before{
 width:100%;
 display:block;
@@ -5628,14 +5629,16 @@ p{
 /*this is for read more*/
 .extra {
 	display: none;
+	
 }
 p{
  display: inline;
  text-align:justify;
 
  #section-about p {
-	text-align: justify;
+	 text-align: justify; 
 }
+
 
 
 }
@@ -8024,9 +8027,6 @@ h2 {
     }
 }
 
-.copyright-center {
-    text-align: center;
-}
 
 .testimonial a {
 	color: #1a73e8; /* Highlight color for the link */
@@ -8076,32 +8076,47 @@ h2 {
 }
 
 
+footer.style-2 {
+    padding: 10px 0; /* Adjust the padding to decrease the height */
+    background-color: #000; /* Adjust background color if necessary */
+}
+
+footer .container {
+    max-width: 100%; /* Ensure the container uses full width */
+}
+
+
+
+.logo-small {
+    margin-top: 40px;/* Add any other styling needed for the logo image */
+}
+
 .contact-details-box {
-    width: 100%; /* Adjust width as needed */
-    max-width: 350px; /* Limit maximum width */
-    padding: 15px;
-    margin-top: 20px;
+    padding: 10px; /* Adjust padding to decrease height */
+    margin-top: 5px; /* Adjust margin to decrease spacing */
     border: 1px solid #ccc;
     box-sizing: border-box;
-   
+    /* font-weight: bold; */
     margin-left: auto; 
-    margin-right: auto; /* Center horizontally */
-	text-align: right; 
+    margin-right: 60px; /* Align to the right */
+	max-width: 300px;
+    /* text-align: right;  */
 }
 
 .contact-details h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #ffffff; /* White color */
-	text-align: right;
+    font-size: 16px; /* Adjust font size to decrease height */
+    margin-bottom: 5px; /* Adjust margin to decrease spacing */
+    color: #ffffff;
+	font-weight: bold;
+    
 }
 
 .contact-details p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 8px;
-    color: #ffffff; /* White color */
-	text-align: right;
+    font-size: 14px; /* Adjust font size to decrease height */
+    line-height: 1.4; /* Adjust line height to decrease spacing */
+    margin-bottom: 5px; /* Adjust margin to decrease spacing */
+    color: #ffffff;
+    /* text-align: right; */
 }
 
 .contact-details p a {
@@ -8114,15 +8129,36 @@ h2 {
 }
 
 .social-icons {
-    text-align: right; /* Align icons to the right */
-	margin-top: 10px;
+    text-align: right;
+    margin-top: 5px; /* Adjust margin to decrease spacing */
+	margin-right: 100px;
+
 }
 
 .social-icons a {
-    margin-left: 10px; /* Add spacing between icons */
-    color: #333; /* Adjust icon color */
+    margin-left: 5px; /* Adjust spacing between icons */
+    color: #333;
+}
+.bold-text {
+    font-weight: bold; /* Makes the text bold */
 }
 
+
 .social-icons a:hover {
-    color: #337ab7; /* Adjust color on hover */
+    color: #337ab7;
 }
+
+
+.custom-row {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    
+   
+}
+
+.custom-col {
+    text-align: center; /* Center text within column */
+}
+
+
