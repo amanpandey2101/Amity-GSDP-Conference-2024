@@ -31,4 +31,9 @@ document.querySelectorAll('.button').forEach(button => {
   button.addEventListener('pointerdown', (event) => {
       event.stopPropagation();
   });
+  button.addEventListener('click', (event) => {
+      event.preventDefault();
+      var targetModal = event.currentTarget.getAttribute('data-bs-target');
+      $(targetModal).modal('show');
+  });
 });
