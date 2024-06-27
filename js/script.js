@@ -27,3 +27,8 @@ var swiper = new Swiper(".slide-content", {
       },
   },
 });
+document.querySelectorAll('.button').forEach(button => {
+  button.addEventListener('pointerdown', (event) => {
+      event.stopPropagation();
+  });
+});

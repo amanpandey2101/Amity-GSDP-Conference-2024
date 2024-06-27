@@ -3213,8 +3213,8 @@ border:solid 1px #ddd;
 	text-align:left;
 }
 .pricing-s1 .bottom ul li {
-	line-height: 40px;
-	padding: 0px 30px;
+	line-height: 26px;
+	padding: 12px 30px;
 }
 .pricing-s1 .bottom ul li > span {
 	color: #16A085;
@@ -3235,6 +3235,7 @@ border:solid 1px #ddd;
 	margin-right:10px;
 	font-size:14px;
 }
+
 .pricing-s1 .ribbon{
   width: 200px;
   position: absolute;
@@ -4214,8 +4215,8 @@ top:0;
 	background-color: rgb(255, 213, 0);
     text-decoration: none;
 	color: black;
-	padding:0.7rem;
-	font-size: 1.4em;
+	padding:0.4rem;
+	font-size: 1.2em;
 	border-radius: 5%;
 
 }
@@ -5634,14 +5635,14 @@ p{
 p{
  display: inline;
  text-align:justify;
-
- #section-about p {
-	 text-align: justify; 
+}
+#section-about .content{
+	font-family:"Poppins";
+	
 }
 
 
 
-}
 input[type="checkbox"] {
 	height: 2em;
 	display: block;
@@ -6351,7 +6352,7 @@ transition:.5s;
 }
 .schedule-item .sc-pic img {
 
-	object-fit: cover;
+	object-fit:fill;
 }
 .row .committee-card{
 	box-shadow: 3px 3px 12px 3px gray;
@@ -6362,8 +6363,8 @@ transition:.5s;
 	
 }
 .row .committee-card:hover{
-	box-shadow: 1px 5px 10px 10px #c71e837f;
-	scale: 1.06;
+	box-shadow: 1px 4px 7px 4px #c71e837f;
+	scale: 1.04;
 	transition: all 200ms ease-in-out;
 	
 	
@@ -6464,6 +6465,25 @@ transition:.5s;
 }
 .text-right{
 	text-align:right;
+}
+@media only screen and (max-width:768px){
+
+	#section-sponsors.logos .logo{
+		display: flex !important;
+		justify-content: center !important;
+		text-align: center;
+		width: 100%;
+		
+	}
+	#section-sponsors .logos{
+		display: flex !important;
+		justify-content: center !important;
+		text-align: center;
+		margin: auto;
+		
+		
+	}
+
 }
 
 /* ================================================== */
@@ -7721,14 +7741,16 @@ body {
 .sc-time {
     /* background-color: #ffeb3b; Light yellow background */
     padding: 10px 15px;
-    border-radius: 8px;
-    font-weight: bold;
-    color: black; /* Red color */
-    font-size: 1.2em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    
+    font-weight: bolder;
+    color: black; 
+    font-size: 1.4em;
+	font-family: "Poppins";
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+   text-align: start;
 	margin-top: 4vh;
 	margin-bottom: 4vh;
+	border-bottom: 1.5px solid gray;
 }
 
 .sc-pic img {
@@ -7788,7 +7810,7 @@ body {
 /* Example of CSS styles */
 div.note {
     color: #007bff; /* Blue color as an example */
-    font-size: 16px; /* Example of additional styling */
+    font-size: 13px; /* Example of additional styling */
     font-weight: bold; /* Example of additional styling */
     /* Add more styles as needed */
 }
@@ -7988,6 +8010,7 @@ h2 {
 
 #testimonials-section .testimonial {
     background-color: #fff;
+	font-family: "Poppins";
     padding: 40px;
     margin-bottom: 30px;
     border: 1px solid #ddd;
@@ -7998,6 +8021,7 @@ h2 {
 
 #testimonials-section .testimonial .title {
     font-size: 24px;
+	font-family: "Poppins";
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
@@ -8047,11 +8071,11 @@ h2 {
 
 .register-btn, .download-btn {
 	flex: 1;
-	max-width: 220px; /* Set a max-width for the buttons */
-	padding: 15px;
-	font-size: 18px;
+	max-width: 180px; /* Set a max-width for the buttons */
+	padding: 10px;
+	font-size: 12px;
 	font-weight: bold;
-	color: #000; /* Black text color for contrast */
+	color: #000000; 
 	background-color: #ffd700; /* Yellow color */
 	border: none;
 	border-radius: 5px;
