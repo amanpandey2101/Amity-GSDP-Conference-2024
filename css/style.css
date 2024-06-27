@@ -2133,6 +2133,7 @@ border:solid 1px #ddd;
 		position: relative;
 
 
+
 	}
 	/* divider */
 	/* ------------------------------ */
@@ -6356,7 +6357,8 @@ transition:.5s;
 	object-fit:fill;
 }
 .row .committee-card{
-	box-shadow: 3px 3px 12px 3px gray;
+	/* box-shadow: 3px 3px 12px 3px gray; */
+	box-shadow: 1px 1px 5px 6px gray;
 	border-radius: 2%;
 	margin-top: 2vh;
 	width:200px;
@@ -6364,7 +6366,7 @@ transition:.5s;
 	
 }
 .row .committee-card:hover{
-	box-shadow: 1px 4px 7px 4px #c71e837f;
+	/* box-shadow: 1px 4px 7px 4px #c71e837f; */
 	scale: 1.04;
 	transition: all 200ms ease-in-out;
 	
@@ -7878,7 +7880,7 @@ p {
 
 /* Custom styles for the buttons */
 .btn.custom-btn-info {
-    background-color: #ffc107;
+    background-color: purple;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -7888,11 +7890,11 @@ p {
 }
 
 .btn.custom-btn-info:hover {
-    background-color: #138496;
+    background-color: #0056b3;
 }
 
 .btn.custom-btn-primary {
-    background-color: #ffc107;
+    background-color: purple;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -7906,7 +7908,7 @@ p {
 }
 
 .btn.custom-btn-warning {
-    background-color: #ffc107;
+    background-color: purple;
     color:white;
     border: none;
     padding: 10px 20px;
@@ -7916,11 +7918,11 @@ p {
 }
 
 .btn.custom-btn-warning:hover {
-    background-color: #bd2130;
+    background-color: #0056b3;
 }
 
 .btn.custom-btn-danger {
-    background-color: #ffc107;
+    background-color: purple;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -7930,11 +7932,11 @@ p {
 }
 
 .btn.custom-btn-danger:hover {
-    background-color: #bd2130;
+    background-color: #0056b3;
 }
 
 .btn.custom-btn-success {
-    background-color: #ffc107;
+    background-color: purple;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -7944,7 +7946,7 @@ p {
 }
 
 .btn.custom-btn-success:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
 /* Custom styles for the h2 element */
