@@ -7719,11 +7719,11 @@ body {
 }
 
 .sc-time {
-    background-color: #ffeb3b; /* Light yellow background */
+    /* background-color: #ffeb3b; Light yellow background */
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: bold;
-    color: #d32f2f; /* Red color */
+    color: black; /* Red color */
     font-size: 1.2em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
