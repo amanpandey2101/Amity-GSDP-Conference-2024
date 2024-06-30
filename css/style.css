@@ -6361,7 +6361,7 @@ transition:.5s;
 }
 .row .committee-card{
 	/* box-shadow: 3px 3px 12px 3px gray; */
-	box-shadow: 1px 1px 5px 6px gray;
+	box-shadow: 1px 1px 5px;
 	border-radius: 2%;
 	margin-top: 2vh;
 	width:200px;
@@ -8119,18 +8119,20 @@ footer .container {
 
 
 .logo-small {
-    margin-top: 40px;/* Add any other styling needed for the logo image */
+    margin-top: 50px;/* Add any other styling needed for the logo image */
+
 }
 
 .contact-details-box {
-    padding: 10px; /* Adjust padding to decrease height */
-    margin-top: 5px; /* Adjust margin to decrease spacing */
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    /* padding: 10px; Adjust padding to decrease height */
+    /* margin-top: auto;  */
+    /* border: 1px solid #ccc;
+    box-sizing: border-box; */
     /* font-weight: bold; */
     margin-left: auto; 
-    margin-right: 60px; /* Align to the right */
-	max-width: 350px;
+    margin-right: 60px;
+	max-width: 380px;
+	
     /* text-align: right;  */
 }
 
@@ -8162,7 +8164,7 @@ footer .container {
 .social-icons {
     text-align: right;
     margin-top: 5px; /* Adjust margin to decrease spacing */
-	margin-right: 100px;
+	margin-right: 850px;
 
 }
 
