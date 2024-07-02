@@ -2165,7 +2165,6 @@ border:solid 1px #ddd;
 	}
 	
 	
-	
 	/* divider */
 	/* ------------------------------ */
 	.spacer-single{
@@ -4302,10 +4301,23 @@ overflow:hidden;
 /* call to action */
 /* ================================================== */
 
-.call-to-action h2,
+/* .call-to-action h2,
 .call-to-action h3{
 	margin:0;
+} */
+
+.call-to-action h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center; /* Center the flex items vertically */
+    height: 100%; /* Ensure the container has height to center vertically */
+	
 }
+
 
 /* ================================================== */
 /* overide bootstrap 4 */
@@ -8175,6 +8187,7 @@ footer .container {
 
 .logo-small {
     margin-top: 50px;/* Add any other styling needed for the logo image */
+	margin-left: 50px;
 
 }
 
@@ -8216,24 +8229,68 @@ footer .container {
     text-decoration: underline;
 }
 
+/* .social-icons {
+    text-align: right;
+    margin-top: 5px; 
+	margin-right: 850px;
+
+}
+
+.social-icons a {
+    margin-left: 5px;
+    color: #333;
+}
+.bold-text {
+    font-weight: bold; 
+}
+
+
+.social-icons a:hover {
+    color: #337ab7;
+} */
+ /* Base styling for the social icons */
 .social-icons {
     text-align: right;
     margin-top: 5px; /* Adjust margin to decrease spacing */
-	margin-right: 850px;
-
+    margin-right: 850px;
 }
 
 .social-icons a {
     margin-left: 5px; /* Adjust spacing between icons */
     color: #333;
 }
+
 .bold-text {
     font-weight: bold; /* Makes the text bold */
 }
 
-
 .social-icons a:hover {
     color: #337ab7;
+}
+
+/* Responsive styling for tablets and larger screens (default) */
+@media (min-width: 768px) {
+    .social-icons {
+        text-align: right; /* Align right for tablets and larger screens */
+        margin-right: 850px;
+    }
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 767px) {
+    .social-icons {
+        text-align: center; /* Center the icons on mobile screens */
+        margin-right: 0; /* Reset the margin */
+    }
+
+    .social-icons a {
+        margin-left: 10px; /* Increase spacing between icons for better touch targets */
+    }
+
+    .bold-text {
+        display: block; /* Display 'Follow Us :' on a new line for mobile */
+        margin-bottom: 5px; /* Add some space below the bold text */
+    }
 }
 
 
