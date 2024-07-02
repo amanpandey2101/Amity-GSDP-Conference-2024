@@ -40,10 +40,10 @@
 * media query
 
 /* ================================================== */
-@charset "utf-8";
+ @charset "utf-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
-@import url(https://fonts.googleapis.com/css?family=Allura);
+@import url(https://fonts.googleapis.com/css?family=Allura); 
 
 /* import icons */
 @import url("../fonts/font-awesome/css/font-awesome.css");
@@ -1106,7 +1106,7 @@ height:auto;
 /* ================================================== */
 /* footer */
 /* ================================================== */
-footer {
+ footer {
 	background: #101010;
 	color: #ccc;
 	padding: 80px 0 0 0;
@@ -1138,7 +1138,7 @@ footer {
 	footer.light a{
 		color:#606060 !important;
 		text-decoration:none;
-	}
+	} 
 
 	.de-navbar-left footer{
 	padding:70px 70px 0 70px;
@@ -2126,7 +2126,7 @@ border:solid 1px #ddd;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: rgba(255,255,255,.5);
 	}
-	.action-buttons{
+	/* .action-buttons{
 		display: flex;
 		justify-content: center;
 		column-gap: 3vw;
@@ -2134,7 +2134,38 @@ border:solid 1px #ddd;
 
 
 
+	} */
+
+	.custom-buttons {
+		display: flex;
+		justify-content: center;
+		column-gap: 3vw;
+		position: relative;
 	}
+	
+	.custom-btn {
+		display: inline-block;
+		padding: 12px 24px;
+		text-decoration: none;
+		text-align: center;
+		color: #0a0909;
+		background-color: #e1ee26;
+		border: 2px solid #e1ee26;
+		border-radius: 5px;
+		transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+		box-sizing: border-box; /* Ensure padding is included in the button size */
+		width: 180px;
+		font-weight: bold; /* Make text bold */
+	}
+	
+	.custom-btn:hover {
+		background-color: #e1ee26;
+		border-color: #e1ee26;
+		transform: scale(1.05); /* Scale the button slightly on hover for a subtle effect */
+	}
+	
+	
+	
 	/* divider */
 	/* ------------------------------ */
 	.spacer-single{
@@ -2378,7 +2409,7 @@ border:solid 1px #ddd;
 	font-size:72px;
 	}
 	h1.title-3 strong{
-	font-family:"Allura";
+    font-family: 'Poppins'; 
 	text-transform:none;
 	letter-spacing:0;
 	font-weight:normal;
@@ -5634,6 +5665,7 @@ p{
 	font-family: "Poppins";
 	
 	
+	
 }
 p{
  display: inline;
@@ -5643,6 +5675,7 @@ p{
 	font-family:"Poppins";
 	
 }
+
 
 
 
@@ -7714,6 +7747,16 @@ body {
 }
 
 /* Centering the entire section */
+.new-section-class h2{
+    font-family: 'Poppins', sans-serif;
+	font-weight: normal ;
+	font-size: 40px;
+	
+}
+
+
+
+
 .new-section-class {
     display: flex;
     justify-content: center;
@@ -7962,10 +8005,16 @@ h2 {
     text-transform: uppercase;
 	text-align: center;
 }
+#section-sponsors h1{
+	font-family:  'Poppins', sans-serif;
+	font-weight: normal;
+	font-size: 40px;
+}
 
 #section-sponsors .card {
 	width: 80%;
 	height: 80%;
+	object-fit: cover;
     border: 2px solid black; /* Set border color to black */
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; /* Added background-color transition */
     overflow: hidden;
@@ -7996,6 +8045,12 @@ h2 {
 
 
 /* Testimonials Section */
+#testimonials-section {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
 #testimonials-section {
     padding: 80px 0;
     background-color: #f9f9f9;
@@ -8029,7 +8084,7 @@ h2 {
 #testimonials-section .testimonial .title {
     font-size: 24px;
 	font-family: "Poppins";
-    font-weight: bold;
+    font-weight: normal;
     color: #333;
     margin-bottom: 20px;
     display: block;
@@ -8194,4 +8249,17 @@ footer .container {
     text-align: center; /* Center text within column */
 }
 
+.section.theme, h5 {
+	font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
 
+.section.theme, h5, ul, li {
+	font-family: 'Poppins', sans-serif;
+	
+	
+}
+#section-ticket h1{
+    font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+}
