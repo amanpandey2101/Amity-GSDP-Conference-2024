@@ -2139,8 +2139,9 @@ border:solid 1px #ddd;
 	.custom-buttons {
 		display: flex;
 		justify-content: center;
-		column-gap: 3vw;
+		gap: 10px; /* Adjust gap between buttons */
 		position: relative;
+		flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
 	}
 	
 	.custom-btn {
@@ -2150,9 +2151,9 @@ border:solid 1px #ddd;
 		text-align: center;
 		color: #ffffff;
 		background-color: #f8f40d;
-		border: 2px solid #f8f40d;
+		border: 2px solid #f8f40d;	
 		border-radius: 5px;
-		transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+		transition: background-color 0.3s, border-color 0.3s, color 0.3s, transform 0.3s;
 		box-sizing: border-box; /* Ensure padding is included in the button size */
 		width: 180px; /* Set a fixed width to ensure both buttons are the same size */
 		font-weight: bold; /* Make text bold */
@@ -2161,11 +2162,25 @@ border:solid 1px #ddd;
 	.custom-btn:hover {
 		background-color: #f8f40d;
 		border-color: #f8f40d;
+
 		transform: scale(1.05); /* Scale the button slightly on hover for a subtle effect */
 }
 	
 	
 	
+	
+	@media (max-width: 600px) {
+		.custom-buttons {
+			flex-direction: column; /* Stack buttons vertically on smaller screens */
+			align-items: center; /* Center align buttons */
+		}
+		
+		.custom-btn {
+			width: 100%; /* Full width on smaller screens */
+			max-width: 180px; 
+			margin-bottom: 10px; /* Add space between stacked buttons */
+		}
+	}
 	
 	
 	/* divider */
